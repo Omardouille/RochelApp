@@ -42,6 +42,8 @@ public class VuePilotage extends FragmentActivity implements OnMapReadyCallback 
         LatLng lr = new LatLng(46.152994, -1.1560821);
         float zoom = 15.0f;
         mMap.addMarker(new MarkerOptions().position(lr).title("La Rochelle"));
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        mMap.getUiSettings().setScrollGesturesEnabled(false);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr,zoom));
     }
 }
