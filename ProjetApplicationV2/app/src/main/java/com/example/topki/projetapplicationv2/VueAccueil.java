@@ -30,6 +30,7 @@ public class VueAccueil extends LinearLayout
         this.addView(text);
         this.addView(boutonInfos);
         this.addView(boutonPiloter);
+
     }
 
 }

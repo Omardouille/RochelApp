@@ -9,20 +9,21 @@ import android.widget.Button;
 
 public class MainActivity extends Activity{
 
-    Button boutonInfos;
-    Button  boutonPiloter;
+    public Button boutonInfos;
+    public Button  boutonPiloter;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+
             //Création de la vue
 
+            boutonInfos = (Button)findViewById(R.id.button2);
+            boutonPiloter = (Button) findViewById(R.id.button3);
 
-            boutonInfos = new Button(this);
-            boutonPiloter = new Button(this);
+            //VueAccueil vueAccueil = new VueAccueil(this, boutonInfos, boutonPiloter);
 
-            VueAccueil vueAccueil = new VueAccueil(this, boutonInfos, boutonPiloter);
 
-            super.onCreate(savedInstanceState);
-            setContentView(vueAccueil);
 
             boutonPiloter.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -31,12 +32,12 @@ public class MainActivity extends Activity{
                 }
             });
 
+
             boutonInfos.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     startActivity(new Intent(MainActivity.this, VueSimulateur.class));
                 }
             });
-
         }
 }
