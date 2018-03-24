@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D301750A2064E83B0080559A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D30175092064E83B0080559A /* main.m */; };
+		D301750D2064E83B0080559A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D301750C2064E83B0080559A /* AppDelegate.m */; };
+		D30175102064E83B0080559A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D301750F2064E83B0080559A /* FirstViewController.m */; };
+		D30175132064E83B0080559A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30175122064E83B0080559A /* SecondViewController.m */; };
+		D30175162064E83B0080559A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30175142064E83B0080559A /* Main.storyboard */; };
+		D30175182064E83B0080559A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30175172064E83B0080559A /* Assets.xcassets */; };
+		D301751B2064E83B0080559A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30175192064E83B0080559A /* LaunchScreen.storyboard */; };
+		D30175262064E83B0080559A /* Prj_Smart_Boat_SAMINETests.m in Sources */ = {isa = PBXBuildFile; fileRef = D30175252064E83B0080559A /* Prj_Smart_Boat_SAMINETests.m */; };
+		D30175312064E83C0080559A /* Prj_Smart_Boat_SAMINEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D30175302064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D30175222064E83B0080559A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30174FD2064E83B0080559A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30175042064E83B0080559A;
+			remoteInfo = Prj_Smart_Boat_SAMINE;
+		};
+		D301752D2064E83B0080559A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30174FD2064E83B0080559A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30175042064E83B0080559A;
+			remoteInfo = Prj_Smart_Boat_SAMINE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D30175052064E83B0080559A /* Prj_Smart_Boat_SAMINE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prj_Smart_Boat_SAMINE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30175092064E83B0080559A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D301750B2064E83B0080559A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D301750C2064E83B0080559A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D301750E2064E83B0080559A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D301750F2064E83B0080559A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D30175112064E83B0080559A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D30175122064E83B0080559A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D30175152064E83B0080559A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D30175172064E83B0080559A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D301751A2064E83B0080559A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D301751C2064E83B0080559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30175212064E83B0080559A /* Prj_Smart_Boat_SAMINETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prj_Smart_Boat_SAMINETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30175252064E83B0080559A /* Prj_Smart_Boat_SAMINETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prj_Smart_Boat_SAMINETests.m; sourceTree = "<group>"; };
+		D30175272064E83B0080559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D301752C2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prj_Smart_Boat_SAMINEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30175302064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prj_Smart_Boat_SAMINEUITests.m; sourceTree = "<group>"; };
+		D30175322064E83C0080559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D30175022064E83B0080559A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D301751E2064E83B0080559A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30175292064E83B0080559A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30174FC2064E83B0080559A = {
+			isa = PBXGroup;
+			children = (
+				D30175072064E83B0080559A /* Prj_Smart_Boat_SAMINE */,
+				D30175242064E83B0080559A /* Prj_Smart_Boat_SAMINETests */,
+				D301752F2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests */,
+				D30175062064E83B0080559A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D30175062064E83B0080559A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30175052064E83B0080559A /* Prj_Smart_Boat_SAMINE.app */,
+				D30175212064E83B0080559A /* Prj_Smart_Boat_SAMINETests.xctest */,
+				D301752C2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D30175072064E83B0080559A /* Prj_Smart_Boat_SAMINE */ = {
+			isa = PBXGroup;
+			children = (
+				D301750B2064E83B0080559A /* AppDelegate.h */,
+				D301750C2064E83B0080559A /* AppDelegate.m */,
+				D301750E2064E83B0080559A /* FirstViewController.h */,
+				D301750F2064E83B0080559A /* FirstViewController.m */,
+				D30175112064E83B0080559A /* SecondViewController.h */,
+				D30175122064E83B0080559A /* SecondViewController.m */,
+				D30175142064E83B0080559A /* Main.storyboard */,
+				D30175172064E83B0080559A /* Assets.xcassets */,
+				D30175192064E83B0080559A /* LaunchScreen.storyboard */,
+				D301751C2064E83B0080559A /* Info.plist */,
+				D30175082064E83B0080559A /* Supporting Files */,
+			);
+			path = Prj_Smart_Boat_SAMINE;
+			sourceTree = "<group>";
+		};
+		D30175082064E83B0080559A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D30175092064E83B0080559A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D30175242064E83B0080559A /* Prj_Smart_Boat_SAMINETests */ = {
+			isa = PBXGroup;
+			children = (
+				D30175252064E83B0080559A /* Prj_Smart_Boat_SAMINETests.m */,
+				D30175272064E83B0080559A /* Info.plist */,
+			);
+			path = Prj_Smart_Boat_SAMINETests;
+			sourceTree = "<group>";
+		};
+		D301752F2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D30175302064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests.m */,
+				D30175322064E83C0080559A /* Info.plist */,
+			);
+			path = Prj_Smart_Boat_SAMINEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D30175042064E83B0080559A /* Prj_Smart_Boat_SAMINE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30175352064E83C0080559A /* Build configuration list for PBXNativeTarget "Prj_Smart_Boat_SAMINE" */;
+			buildPhases = (
+				D30175012064E83B0080559A /* Sources */,
+				D30175022064E83B0080559A /* Frameworks */,
+				D30175032064E83B0080559A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prj_Smart_Boat_SAMINE;
+			productName = Prj_Smart_Boat_SAMINE;
+			productReference = D30175052064E83B0080559A /* Prj_Smart_Boat_SAMINE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D30175202064E83B0080559A /* Prj_Smart_Boat_SAMINETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30175382064E83C0080559A /* Build configuration list for PBXNativeTarget "Prj_Smart_Boat_SAMINETests" */;
+			buildPhases = (
+				D301751D2064E83B0080559A /* Sources */,
+				D301751E2064E83B0080559A /* Frameworks */,
+				D301751F2064E83B0080559A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30175232064E83B0080559A /* PBXTargetDependency */,
+			);
+			name = Prj_Smart_Boat_SAMINETests;
+			productName = Prj_Smart_Boat_SAMINETests;
+			productReference = D30175212064E83B0080559A /* Prj_Smart_Boat_SAMINETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D301752B2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D301753B2064E83C0080559A /* Build configuration list for PBXNativeTarget "Prj_Smart_Boat_SAMINEUITests" */;
+			buildPhases = (
+				D30175282064E83B0080559A /* Sources */,
+				D30175292064E83B0080559A /* Frameworks */,
+				D301752A2064E83B0080559A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D301752E2064E83B0080559A /* PBXTargetDependency */,
+			);
+			name = Prj_Smart_Boat_SAMINEUITests;
+			productName = Prj_Smart_Boat_SAMINEUITests;
+			productReference = D301752C2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D30174FD2064E83B0080559A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Mohammed Samine";
+				TargetAttributes = {
+					D30175042064E83B0080559A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D30175202064E83B0080559A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D30175042064E83B0080559A;
+					};
+					D301752B2064E83B0080559A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D30175042064E83B0080559A;
+					};
+				};
+			};
+			buildConfigurationList = D30175002064E83B0080559A /* Build configuration list for PBXProject "Prj_Smart_Boat_SAMINE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D30174FC2064E83B0080559A;
+			productRefGroup = D30175062064E83B0080559A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30175042064E83B0080559A /* Prj_Smart_Boat_SAMINE */,
+				D30175202064E83B0080559A /* Prj_Smart_Boat_SAMINETests */,
+				D301752B2064E83B0080559A /* Prj_Smart_Boat_SAMINEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D30175032064E83B0080559A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D301751B2064E83B0080559A /* LaunchScreen.storyboard in Resources */,
+				D30175182064E83B0080559A /* Assets.xcassets in Resources */,
+				D30175162064E83B0080559A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D301751F2064E83B0080559A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D301752A2064E83B0080559A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D30175012064E83B0080559A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30175132064E83B0080559A /* SecondViewController.m in Sources */,
+				D301750D2064E83B0080559A /* AppDelegate.m in Sources */,
+				D30175102064E83B0080559A /* FirstViewController.m in Sources */,
+				D301750A2064E83B0080559A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D301751D2064E83B0080559A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30175262064E83B0080559A /* Prj_Smart_Boat_SAMINETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30175282064E83B0080559A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30175312064E83C0080559A /* Prj_Smart_Boat_SAMINEUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D30175232064E83B0080559A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30175042064E83B0080559A /* Prj_Smart_Boat_SAMINE */;
+			targetProxy = D30175222064E83B0080559A /* PBXContainerItemProxy */;
+		};
+		D301752E2064E83B0080559A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30175042064E83B0080559A /* Prj_Smart_Boat_SAMINE */;
+			targetProxy = D301752D2064E83B0080559A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D30175142064E83B0080559A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30175152064E83B0080559A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D30175192064E83B0080559A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D301751A2064E83B0080559A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D30175332064E83C0080559A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D30175342064E83C0080559A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D30175362064E83C0080559A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Prj_Smart_Boat_SAMINE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LR.Prj-Smart-Boat-SAMINE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D30175372064E83C0080559A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Prj_Smart_Boat_SAMINE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LR.Prj-Smart-Boat-SAMINE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D30175392064E83C0080559A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Prj_Smart_Boat_SAMINETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LR.Prj-Smart-Boat-SAMINETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prj_Smart_Boat_SAMINE.app/Prj_Smart_Boat_SAMINE";
+			};
+			name = Debug;
+		};
+		D301753A2064E83C0080559A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Prj_Smart_Boat_SAMINETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LR.Prj-Smart-Boat-SAMINETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prj_Smart_Boat_SAMINE.app/Prj_Smart_Boat_SAMINE";
+			};
+			name = Release;
+		};
+		D301753C2064E83C0080559A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Prj_Smart_Boat_SAMINEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LR.Prj-Smart-Boat-SAMINEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Prj_Smart_Boat_SAMINE;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D301753D2064E83C0080559A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Prj_Smart_Boat_SAMINEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LR.Prj-Smart-Boat-SAMINEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Prj_Smart_Boat_SAMINE;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D30175002064E83B0080559A /* Build configuration list for PBXProject "Prj_Smart_Boat_SAMINE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30175332064E83C0080559A /* Debug */,
+				D30175342064E83C0080559A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30175352064E83C0080559A /* Build configuration list for PBXNativeTarget "Prj_Smart_Boat_SAMINE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30175362064E83C0080559A /* Debug */,
+				D30175372064E83C0080559A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D30175382064E83C0080559A /* Build configuration list for PBXNativeTarget "Prj_Smart_Boat_SAMINETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30175392064E83C0080559A /* Debug */,
+				D301753A2064E83C0080559A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D301753B2064E83C0080559A /* Build configuration list for PBXNativeTarget "Prj_Smart_Boat_SAMINEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D301753C2064E83C0080559A /* Debug */,
+				D301753D2064E83C0080559A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D30174FD2064E83B0080559A /* Project object */;
+}
