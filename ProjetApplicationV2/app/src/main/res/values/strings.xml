@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProjetApplicationV2</string>
+    <string name="title_activity_vue_pilotage">Map</string>
+    <string name="title_activity_vue_simulateur">Map</string>
 </resources>
