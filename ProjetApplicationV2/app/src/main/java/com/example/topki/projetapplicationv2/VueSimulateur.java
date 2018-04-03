@@ -1,7 +1,8 @@
 package com.example.topki.projetapplicationv2;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,9 +11,15 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class VueSimulateur extends FragmentActivity implements OnMapReadyCallback {
+public class VueSimulateur extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
+    private  NMEASimulateur simulateur;
+    private TextView latitude;
+    private TextView longitude;
+    private TextView vitesse;
+    private TextView cap;
+    private String lat, longi, vit, c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +29,11 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        simulateur = new NMEASimulateur("test");
+        latitude = (TextView)findViewById(R.id.latitude);
+        longitude = (TextView)findViewById(R.id.longitude);
+        vitesse = (TextView)findViewById(R.id.vitesse);
+        cap = (TextView)findViewById(R.id.destination);
     }
 
 
@@ -41,6 +53,20 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         LatLng lr = new LatLng(46.152994, -1.1560821);
         float zoom = 15.0f;
         mMap.addMarker(new MarkerOptions().position(lr).title("La Rochelle"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr,zoom));
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr, zoom));
     }
+
+    protected void affichageInfo(){
+        longi =  simulateur.nmeaParser.getLongitude();
+        lat = simulateur.nmeaParser.getLatitude();
+        vit = simulateur.nmeaParser.getVitesse();
+        c = simulateur.nmeaParser.getCap();
+        latitude.setText(lat);
+        longitude.setText(longi);
+        vitesse.setText(vit);
+        cap.setText(c);
+    }
+
+
 }
