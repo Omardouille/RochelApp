@@ -14,7 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class VueSimulateur extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
-    private  NMEASimulateur simulateur;
+    private NMEASimulateur simulateur;
     private TextView latitude;
     private TextView longitude;
     private TextView vitesse;
@@ -29,7 +29,7 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        simulateur = new NMEASimulateur("test");
+        simulateur = new NMEASimulateur("127.0.0.1");
         latitude = (TextView)findViewById(R.id.latitude);
         longitude = (TextView)findViewById(R.id.longitude);
         vitesse = (TextView)findViewById(R.id.vitesse);
