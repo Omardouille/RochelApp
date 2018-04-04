@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57D95F4B20583E0300E33289"
-               BuildableName = "Vue1_Visualisation.app"
-               BlueprintName = "Vue1_Visualisation"
-               ReferencedContainer = "container:Vue1_Visualisation.xcodeproj">
+               BlueprintIdentifier = "57786681206FE4790075C90F"
+               BuildableName = "ApplicationSwift.app"
+               BlueprintName = "ApplicationSwift"
+               ReferencedContainer = "container:ApplicationSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "57D95F4B20583E0300E33289"
-            BuildableName = "Vue1_Visualisation.app"
-            BlueprintName = "Vue1_Visualisation"
-            ReferencedContainer = "container:Vue1_Visualisation.xcodeproj">
+            BlueprintIdentifier = "57786681206FE4790075C90F"
+            BuildableName = "ApplicationSwift.app"
+            BlueprintName = "ApplicationSwift"
+            ReferencedContainer = "container:ApplicationSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "57D95F4B20583E0300E33289"
-            BuildableName = "Vue1_Visualisation.app"
-            BlueprintName = "Vue1_Visualisation"
-            ReferencedContainer = "container:Vue1_Visualisation.xcodeproj">
+            BlueprintIdentifier = "57786681206FE4790075C90F"
+            BuildableName = "ApplicationSwift.app"
+            BlueprintName = "ApplicationSwift"
+            ReferencedContainer = "container:ApplicationSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "57D95F4B20583E0300E33289"
-            BuildableName = "Vue1_Visualisation.app"
-            BlueprintName = "Vue1_Visualisation"
-            ReferencedContainer = "container:Vue1_Visualisation.xcodeproj">
+            BlueprintIdentifier = "57786681206FE4790075C90F"
+            BuildableName = "ApplicationSwift.app"
+            BlueprintName = "ApplicationSwift"
+            ReferencedContainer = "container:ApplicationSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

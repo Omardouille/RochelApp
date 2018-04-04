@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Vue1_Visualisation.xcscheme</key>
+		<key>ApplicationSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>57D95F4B20583E0300E33289</key>
+		<key>57786681206FE4790075C90F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
