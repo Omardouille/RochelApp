@@ -4,6 +4,9 @@ import android.graphics.Color;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,11 +26,12 @@ import java.util.ArrayList;
 
 import java.io.IOException;
 
-public class VuePilotage extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener {
+public class VuePilotage extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener, GoogleMap.OnMarkerClickListener, GoogleMap.InfoWindowAdapter {
 
     private GoogleMap mMap;
     ArrayList<LatLng> points = new ArrayList<LatLng>();
     ArrayList<Marker> markers;
+    SeekBar s;
 
 
     @Override
@@ -54,6 +58,8 @@ public class VuePilotage extends FragmentActivity implements OnMapReadyCallback,
         mMap = googleMap;
         mMap.setOnMapClickListener(this);
         mMap.setOnMapLongClickListener(this);
+        mMap.setOnMarkerClickListener(this);
+        mMap.setInfoWindowAdapter(this);
         // Add a marker in Sydney and move the camera
         LatLng lr = new LatLng(46.151194, -1.161005);
         float zoom = 14.2f;
@@ -139,5 +145,25 @@ public class VuePilotage extends FragmentActivity implements OnMapReadyCallback,
 
     }
 
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        marker.showInfoWindow();
+
+        return true;
+    }
+
+    @Override
+    public View getInfoWindow(Marker marker) {
+
+        View v = getLayoutInflater().inflate(R.layout.info_window_layout,null);
+        Button b1 = (Button) v.findViewById(R.id.buttonPlus);
+        return v;
+    }
+
+    @Override
+    public View getInfoContents(Marker marker) {
+
+        return null;
+    }
 
 }
