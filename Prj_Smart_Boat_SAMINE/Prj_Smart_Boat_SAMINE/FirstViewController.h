@@ -12,18 +12,24 @@
 @interface FirstViewController : UIViewController <MKMapViewDelegate,NSURLConnectionDelegate>
 {
     
-    
-    
+    IBOutlet MKMapView *mapView;
     NSMutableData *_responseData;
+    CLLocationCoordinate2D coordinate;
+    MKPolylineView *lineView;
+    MKPolyline *polyline;
+    NSMutableArray *points;
+    
+
     
     
 }
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property ( nonatomic) NSMutableArray *points;
+@property(nonatomic,retain)IBOutlet MKMapView *mapView;
+@property(assign,nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic, retain) NSMutableData *responseData;
-
-
+@property (nonatomic, strong) MKPolylineView *lineView;
+@property (nonatomic, strong) MKPolyline *polyline;
 
 
 
