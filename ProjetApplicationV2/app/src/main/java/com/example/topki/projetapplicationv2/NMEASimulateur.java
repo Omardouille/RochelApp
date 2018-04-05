@@ -23,11 +23,13 @@ class NMEASimulateur extends AsyncTask<String, Void, String> {
     DataInputStream is;
     String responseLine;
     String[] trame_rmc;
+    VueSimulateur vueSimulateur;
 
     public NMEAParser nmeaParser;
 
-    public NMEASimulateur(String host){
+    public NMEASimulateur(String host, VueSimulateur vueSimulateur){
         this.host = host;
+        this.vueSimulateur = vueSimulateur;
         //doInBackground();
     }
 
@@ -41,6 +43,7 @@ class NMEASimulateur extends AsyncTask<String, Void, String> {
                 if(trame_rmc[0].equals("$GPRMC")){
                     NMEAParser nmeaParser = new NMEAParser(trame_rmc);
                     Log.d("NMEA: ",nmeaParser.toString());
+                    this.vueSimulateur.affichageInfo();
                     //Log.d("Socket","Server: " + responseLine);
                 }
             }

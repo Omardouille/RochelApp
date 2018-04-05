@@ -30,12 +30,11 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        simulateur = (NMEASimulateur) new NMEASimulateur("127.0.0.1").execute();
+        simulateur = (NMEASimulateur) new NMEASimulateur("10.1.0.5", this).execute();
         latitude = (TextView)findViewById(R.id.latitude);
         longitude = (TextView)findViewById(R.id.longitude);
         vitesse = (TextView)findViewById(R.id.vitesse);
         cap = (TextView)findViewById(R.id.destination);
-        //affichageInfo();
     }
 
 
@@ -58,6 +57,7 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         mMap.getUiSettings().setAllGesturesEnabled(false);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr, zoom));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr, zoom));
+
     }
 
     protected void affichageInfo(){

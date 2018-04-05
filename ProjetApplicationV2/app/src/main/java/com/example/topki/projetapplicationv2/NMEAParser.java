@@ -10,6 +10,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class NMEAParser {
 
+
     private String time_utc;
     private String alerte;
     /*private String latitude;
@@ -35,6 +36,7 @@ public class NMEAParser {
         date_du_fix = trame[9];
         //declinaison_magnetique = trame[10]+","+trame[11];
         checksum = trame[12];
+
     }
 
     public String getTime_utc() {
