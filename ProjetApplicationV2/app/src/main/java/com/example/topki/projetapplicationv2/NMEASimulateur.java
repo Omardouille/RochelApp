@@ -41,10 +41,10 @@ class NMEASimulateur extends AsyncTask<String, Void, String> {
             while ((responseLine = is.readLine()) != null) {
                 trame_rmc = responseLine.split(",");
                 if(trame_rmc[0].equals("$GPRMC")){
-                    NMEAParser nmeaParser = new NMEAParser(trame_rmc);
+                    nmeaParser = new NMEAParser(trame_rmc);
                     Log.d("NMEA: ",nmeaParser.toString());
                     //Log.d("Socket","Server: " + responseLine);
-                    this.vueSimulateur.affichageInfo(nmeaParser);
+                    this.publishProgress();
                 }
             }
         } catch (UnknownHostException e1) {
@@ -59,6 +59,13 @@ class NMEASimulateur extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
+    }
+
+    @Override
+    protected void onProgressUpdate(Void... values) {
+        super.onProgressUpdate(values);
+        if(nmeaParser != null)
+            this.vueSimulateur.affichageInfo(nmeaParser);
     }
 
 

@@ -14,7 +14,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class VueSimulateur extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
-    private NMEASimulateur simulateur;
     private TextView latitude;
     private TextView longitude;
     private TextView vitesse;
@@ -30,7 +29,7 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        simulateur = (NMEASimulateur) new NMEASimulateur("10.1.0.5", this).execute();
+        new NMEASimulateur("10.1.0.5", this).execute();
         latitude = (TextView)findViewById(R.id.latitude);
         longitude = (TextView)findViewById(R.id.longitude);
         vitesse = (TextView)findViewById(R.id.vitesse);
@@ -62,6 +61,7 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
     }
 
     protected void affichageInfo(NMEAParser nmea){
+        mMap.clear();
         latLng = nmea.getCoordonnee();
         lat = String.valueOf(latLng.latitude);
         longi =  String.valueOf(latLng.longitude);
