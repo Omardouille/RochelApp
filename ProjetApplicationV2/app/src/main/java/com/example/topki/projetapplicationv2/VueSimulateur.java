@@ -20,6 +20,7 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
     private TextView vitesse;
     private TextView cap;
     private String lat, longi, vit, c;
+    private LatLng latLng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +30,12 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        simulateur = new NMEASimulateur("127.0.0.1");
+        simulateur = (NMEASimulateur) new NMEASimulateur("127.0.0.1").execute();
         latitude = (TextView)findViewById(R.id.latitude);
         longitude = (TextView)findViewById(R.id.longitude);
         vitesse = (TextView)findViewById(R.id.vitesse);
         cap = (TextView)findViewById(R.id.destination);
+        //affichageInfo();
     }
 
 
@@ -50,22 +52,25 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng lr = new LatLng(46.152994, -1.1560821);
-        float zoom = 15.0f;
-        mMap.addMarker(new MarkerOptions().position(lr).title("La Rochelle"));
+        LatLng lr = new LatLng(46.151194, -1.161005);
+        float zoom = 14.2f;
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        mMap.getUiSettings().setAllGesturesEnabled(false);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr, zoom));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lr, zoom));
     }
 
     protected void affichageInfo(){
-        longi =  simulateur.nmeaParser.getLongitude();
-        lat = simulateur.nmeaParser.getLatitude();
+        latLng = simulateur.nmeaParser.getCoordonnee();
+        lat = String.valueOf(latLng.latitude);
+        longi =  String.valueOf(latLng.longitude);
         vit = simulateur.nmeaParser.getVitesse();
         c = simulateur.nmeaParser.getCap();
         latitude.setText(lat);
         longitude.setText(longi);
         vitesse.setText(vit);
         cap.setText(c);
+        mMap.addMarker(new MarkerOptions().position(latLng).title("Drone"));
     }
 
 

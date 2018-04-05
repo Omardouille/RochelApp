@@ -12,8 +12,8 @@ public class NMEAParser {
 
     private String time_utc;
     private String alerte;
-    private String latitude;
-    private String longitude;
+    /*private String latitude;
+    private String longitude;*/
     private LatLng coordonnee;
     private String vitesse;
     private String cap;
@@ -27,8 +27,8 @@ public class NMEAParser {
         if(this.alerte.equals("V")){
             Log.d("WARNING",  "Alerte du logiciel !");
         }
-        latitude = trame[3]+","+trame[4];
-        longitude = trame[5]+","+trame[6];
+        /*latitude = trame[3]+","+trame[4];
+        longitude = trame[5]+","+trame[6];*/
         coordonnee = convertDMStoDD(trame[3],trame[4].charAt(0),trame[5],trame[6].charAt(0));
         vitesse = trame[7];
         cap = trame[8];
@@ -44,7 +44,7 @@ public class NMEAParser {
     public String getAlerte() {
         return alerte;
     }
-
+/*
     public String getLatitude() {
         return latitude;
     }
@@ -52,6 +52,7 @@ public class NMEAParser {
     public String getLongitude() {
         return longitude;
     }
+    */
 
     public LatLng getCoordonnee() {
         return coordonnee;

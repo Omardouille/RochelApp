@@ -16,43 +16,48 @@ import java.net.UnknownHostException;
  * Created by Julien on 03/04/2018.
  */
 
-class NMEASimulateur extends AsyncTask<String, LatLng, Void> {
+class NMEASimulateur extends AsyncTask<String, Void, String> {
 
     String host;
-    BufferedReader is;
+    Socket s;
+    DataInputStream is;
     String responseLine;
+    String[] trame_rmc;
 
     public NMEAParser nmeaParser;
 
     public NMEASimulateur(String host){
         this.host = host;
-        doInBackground();
+        //doInBackground();
     }
 
     @Override
     protected String doInBackground(String... strings) {
         try {
-            Socket s = new Socket(this.host, 55555);
-            is = new BufferedReader(new InputStreamReader(s.getInputStream()));
+            s = new Socket(this.host, 55555);
+            is = new DataInputStream(s.getInputStream());
             while ((responseLine = is.readLine()) != null) {
-                String[] trame_rmc = responseLine.split(",");
+                trame_rmc = responseLine.split(",");
                 if(trame_rmc[0].equals("$GPRMC")){
-                    nmeaParser = new NMEAParser(trame_rmc);
+                    NMEAParser nmeaParser = new NMEAParser(trame_rmc);
                     Log.d("NMEA: ",nmeaParser.toString());
                     //Log.d("Socket","Server: " + responseLine);
                 }
             }
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (UnknownHostException e1) {
+            e1.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
         }
 
         return null;
     }
 
+    @Override
     protected void onPostExecute(String result) {
-
+        super.onPostExecute(result);
     }
+
+
 }
 
