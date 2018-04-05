@@ -35,6 +35,7 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
         longitude = (TextView)findViewById(R.id.longitude);
         vitesse = (TextView)findViewById(R.id.vitesse);
         cap = (TextView)findViewById(R.id.destination);
+
     }
 
 
@@ -60,12 +61,12 @@ public class VueSimulateur extends FragmentActivity implements OnMapReadyCallbac
 
     }
 
-    protected void affichageInfo(){
-        latLng = simulateur.nmeaParser.getCoordonnee();
+    protected void affichageInfo(NMEAParser nmea){
+        latLng = nmea.getCoordonnee();
         lat = String.valueOf(latLng.latitude);
         longi =  String.valueOf(latLng.longitude);
-        vit = simulateur.nmeaParser.getVitesse();
-        c = simulateur.nmeaParser.getCap();
+        vit = nmea.getVitesse();
+        c = nmea.getCap();
         latitude.setText(lat);
         longitude.setText(longi);
         vitesse.setText(vit);

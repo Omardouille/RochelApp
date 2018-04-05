@@ -43,8 +43,8 @@ class NMEASimulateur extends AsyncTask<String, Void, String> {
                 if(trame_rmc[0].equals("$GPRMC")){
                     NMEAParser nmeaParser = new NMEAParser(trame_rmc);
                     Log.d("NMEA: ",nmeaParser.toString());
-                    this.vueSimulateur.affichageInfo();
                     //Log.d("Socket","Server: " + responseLine);
+                    this.vueSimulateur.affichageInfo(nmeaParser);
                 }
             }
         } catch (UnknownHostException e1) {
